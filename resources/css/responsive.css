@@ -1,0 +1,100 @@
+@media (max-width: 992px) {
+    .header__info {
+        margin-left: 1rem;
+    }
+
+    .avatar {
+        width: 11rem;
+        height: 11rem;
+    }
+    .header__name {
+        font-size: 2.5rem;
+    }
+
+    .header__specialize {
+        font-size: 1.5rem;
+    }
+
+    .sidebar{
+        margin-top: 13rem;
+    }
+
+    .wrapper {
+        padding-top: 13rem;
+    }
+
+    .contact-method-item {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        margin-top: 10rem;
+        width: 0;
+    }
+
+    .wrapper{
+        margin-left: 0;
+        padding-top: 10rem;
+    }
+
+    .sidebar-expand .wrapper {
+		margin-left: 0;
+	}
+
+    .avatar {
+        margin-left: 0.5rem;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .about__intro {
+        font-size: 1.8rem;
+    }
+
+    .header__name {
+        font-size: 1.8rem;
+    }
+
+    .header__specialize {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 1rem;
+    }
+
+    .contact-method-item {
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 564px) {
+    .header{
+        padding: 1rem;
+    }
+    
+    .header__name {
+        font-size: 1.6rem;
+    }
+
+    .header__specialize {
+        font-size: 1.1rem;
+    }
+
+    .about__content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .pagination {
+        width: 95%;
+    }
+
+    .contact-method-item address {
+        font-size: 1.6rem;
+    }
+
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resources/img/logo.png">
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- end import font -->
+    <!-- import fontawesome pro 5 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- end import fontawesome pro 5 -->
+    <!-- import css -->
+    <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="./resources/css/responsive.css">
+    <!-- end import css -->
+</head>
+<body class="overlay-scrollbar light">
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="nav-mobile">
+            <i class="fal fa-bars"></i>
+        </div>
+        <div class="header-center">
+            <div class="avatar">
+                <img src="./resources/img/me.jpg" alt="avatar">
+            </div>
+            <div class="header__info">
+                <h1 class="header__name">
+                    Tran Ngoc Phuong Nhi
+                </h1>
+                <h3 class="header__specialize">
+                    Intern Front End Developer
+                </h3>
+            </div>
+        </div>
+        <a href="#" class="btn">My CV</a>
+    </header>
+    <!-- End Header -->
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="./resources/img/logo.png" alt="logo">
+        </div>
+        <ul class="navbar">
+            <li class="navbar-item nav-active">
+                <a href="#" class="navbar-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link">
+                    <i class="fas fa-list"></i>
+                    <span>Products</span>
+                </a>
+            </li>
+            <li class="navbar-item">
+                <a href="#" class="navbar-link">
+                    <i class="fas fa-address-card"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="switch-theme">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+        </div>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Content -->
+    <div class="wrapper">
+        <!-- About -->
+        <section id="about" class="content show">
+            <!-- About Content -->
+            <div class="about__content">
+                <h6 class="about__intro">
+                    Come to this job was destiny  because in the past I never thought that I will become a developer.  And now, I am a fourth-year student in the university, which has a location in district 7.
+                </h6>
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-title">
+                            <div class="timeline-icon">
+                                <i class="fal fa-graduation-cap"></i>
+                            </div>
+                            <span>Education</span>
+                        </div>
+                        <ul class="timeline-content">
+                            <li>
+                                <div class="flag-wrapper">
+                                    <span class="flag">8/2018 - present</span>
+                                </div>
+                                <ul class="timeline-desc">
+                                    <li class="school-name">Ton Duc Thang University</li>
+                                    <li>Major: Computer Networks and Data Communication</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-title">
+                            <div class="timeline-icon">
+                                <i class="fal fa-crosshairs"></i>
+                            </div>
+                            <span>Objective</span>
+                        </div>
+                        <ul class="timeline-content">
+                            <li>
+                                <div class="flag-wrapper">
+                                    <span class="flag">Short goals</span>
+                                </div>
+                                <ul class="timeline-desc">
+                                    <li>
+                                        Advance all skills which the frontend developer must have
+                                    </li>
+                                    <li>
+                                        Make new friends, learn the experiences from the others people
+                                    </li>
+                                    <li>
+                                        Learn UX/UI and improve my English
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="flag-wrapper">
+                                    <span class="flag">Long goals</span>
+                                </div>
+                                <ul class="timeline-desc">
+                                    <li>
+                                        Become an expert frontend developer and get higher position during 5 years. Furthermore, I want to become a UX/UI designer
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-title">
+                            <div class="timeline-icon">
+                                <i class="fal fa-globe"></i>
+                            </div>
+                            <span>Languages</span>
+                        </div>
+                        <ul class="timeline-content">
+                            <li>
+                                <div class="flag-wrapper">
+                                    <span class="flag">English</span>
+                                </div>
+                                <ul class="timeline-desc">
+                                    <li>TOEIC 2 skills 750/990</li>
+                                </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- End About Content -->   
+        </section>
+        <!-- End About -->
+
+        <!-- Products -->
+        <section id="products" class="content">
+            <ul class="product"></ul>
+            <ul class="pagination">
+                <li class="btn-prev btn-disabled">
+                    <i class="fal fa-chevron-left"></i>
+                    <i class="fal fa-chevron-left"></i>
+                </li>
+                <ul class="pagination-number"></ul>
+                <li class="btn-next">
+                    <i class="fal fa-chevron-right"></i>
+                    <i class="fal fa-chevron-right"></i>
+                </li>
+            </ul>
+
+             <!-- https://css-tricks.com/gooey-effect/ -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="filter-svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+        </section>
+        <!-- End Products -->
+
+        <!-- Contact -->
+        <section id="contact" class="content">
+            <ul class="social-media">
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100007224248611">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="contact-method">
+                <li class="contact-method-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <address>
+                        <a href="tel:0969564911">0969 564 911</a>
+                    </address>
+                </li>
+                <li class="contact-method-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <address>
+                        <a href="mailto:tn.phuongnhi.4122000@gmail.com">tn.phuongnhi.4122000@gmail.com</a>
+                    </address>
+                </li>
+                <li class="contact-method-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-home-alt"></i>
+                    </div>
+                    <address>
+                        17/2, kp1A, Đong Hung Thuan Guild, Nguyen Van Qua Street, District 12
+                    </address>
+                </li>
+            </ul>
+        </section>
+        <!-- End Contact -->
+    </div>
+    <!-- End Content -->
+
+    <!-- import js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./resources/js/main.js"></script>
+    <!-- end import js -->
+</body>
+</html>
