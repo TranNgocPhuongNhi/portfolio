@@ -115,23 +115,20 @@ const products = [
     {
       id: 1,
       link: 'https://tranngocphuongnhi.github.io/helium/',
-      image: './resources/img/bg-1.png',
+      image: './resources/img/helium.png',
       name: 'Helium',
-      desc: 'This website is the first one I have cloned on the internet to practice my code. Helium is a portfolio which is made by bootstrap 4, designed and developed by UIdeck.',
     },
     {
       id: 2,
       link: 'https://tranngocphuongnhi.github.io/find-house/',
-      image: './resources/img/bg-2.png',
+      image: './resources/img/find-house.png',
       name: 'Find House',
-      desc: 'This website is the second one I have cloned on the internet to practice my code. Find House is a website for anyone have demands to buy houses, properties.',
     },
     {
       id: 3,
       link: 'https://tranngocphuongnhi.github.io/portfolio-v1/',
-      image: './resources/img/bg-3.png',
+      image: './resources/img/portfolio-v1.png',
       name: 'Portfolio version 1',
-      desc: 'This is the first portfolio I made',
     },
 ]
 
@@ -152,140 +149,137 @@ function getCurrentPage(currentPage) {
 function renderProducts() {
     html = ''
     const content = products.map((item, index) => {
-        if(index >= start && index < end) {
+        // if(index >= start && index < end) {
             html += `
                 <li class="product-item">
                     <a href="${item.link}" class="product-link">
                         <img src="${item.image}" alt="background">
                         <div class="product-content">
                             <h2 class="product-name">${item.name}</h2>
-                            <p class="product-desc">
-                                ${item.desc}
-                            </p>
                         </div>
                     </a>
                 </li>
             `
             return html
-        }
+        // }
     })
     products_content.innerHTML = html
 }
 
 renderProducts()
-renderListPage()
+// renderListPage()
 
-function renderListPage() {
-    let html = ''
-    html += `
-                <span class="pagination-indicator"></span>
-                <li class="pagination-active">${1}</li>
-            `
-    for(let i=2; i <= totalPages; i++) {
-        if(i <= 3) {
-            html += `<li>${i}</li>`
-        }
-        else {
-            html += `<li>${i}</li>`.replace(`${i}`,`${i+1}`)
-        }
-    }
-    numberPage.innerHTML = html
-}
+// function renderListPage() {
+//     let html = ''
+//     html += `
+//                 <span class="pagination-indicator"></span>
+//                 <li class="pagination-active">${1}</li>
+//             `
+//     for(let i=2; i <= totalPages; i++) {
+//         if(i <= 3) {
+//             html += `<li>${i}</li>`
+//         }
+//         else {
+//             html += `<li>${i}</li>`.replace(`${i}`,`${i+1}`)
+//         }
+//     }
+//     numberPage.innerHTML = html
+// }
 
-function changePage() {
-    const currentPages = numberPage.querySelectorAll('li')
-    for(let i = 0; i < currentPages.length; i++) {
-        currentPages[i].addEventListener('click', () => {
-            let value = i + 1
-            currentPage = value
+// function changePage() {
+//     const currentPages = numberPage.querySelectorAll('li')
+//     for(let i = 0; i < currentPages.length; i++) {
+//         currentPages[i].addEventListener('click', () => {
+//             let value = i + 1
+//             currentPage = value
 
-            numberPage.querySelectorAll('li').forEach(li => {
-                li.classList.remove('pagination-active')
-            })
-            currentPages[i].classList.add('pagination-active')
+//             numberPage.querySelectorAll('li').forEach(li => {
+//                 li.classList.remove('pagination-active')
+//             })
+//             currentPages[i].classList.add('pagination-active')
 
-            let pagination_indicator = numberPage.querySelector('.pagination-indicator')
-            pagination_indicator.style.left = `calc(${(i * 70)}px)`
+//             let pagination_indicator = numberPage.querySelector('.pagination-indicator')
+//             pagination_indicator.style.left = `calc(${(i * 70)}px)`
             
-            if(currentPage > 1 && currentPage < totalPages) {
-                btnPrev.classList.remove('btn-disabled')
-                btnNext.classList.remove('btn-disabled')
-            }
+//             if(currentPage > 1 && currentPage < totalPages) {
+//                 btnPrev.classList.remove('btn-disabled')
+//                 btnNext.classList.remove('btn-disabled')
+//             }
 
-            if(currentPage === 1) {
-                btnPrev.classList.add('btn-disabled')
-                btnNext.classList.add('btn-disabled')
-            }
+//             if(currentPage === 1) {
+//                 btnPrev.classList.add('btn-disabled')
+//                 btnNext.classList.add('btn-disabled')
+//             }
 
-            if(currentPage === totalPages) {
-                btnNext.classList.add('btn-disabled')
-            }
+//             if(currentPage === totalPages) {
+//                 btnNext.classList.add('btn-disabled')
+//             }
 
-            if(currentPage === totalPages && btnPrev.classList.contains('btn-disabled')) {
-                btnPrev.classList.remove('btn-disabled')
-            }
+//             if(currentPage === totalPages && btnPrev.classList.contains('btn-disabled')) {
+//                 btnPrev.classList.remove('btn-disabled')
+//             }
 
-            if(currentPage === 1 && btnNext.classList.contains('btn-disabled')) {
-                btnNext.classList.remove('btn-disabled')
-            }
+//             if(currentPage === 1 && btnNext.classList.contains('btn-disabled')) {
+//                 btnNext.classList.remove('btn-disabled')
+//             }
 
-            getCurrentPage(currentPage)
-            renderProducts()
-        })
-    }
-}
+//             getCurrentPage(currentPage)
+//             renderProducts()
+//         })
+//     }
+// }
 
-changePage()
+// changePage()
 
-btnNext.addEventListener('click', () => {
-    currentPage++
+// btnNext.addEventListener('click', () => {
+//     currentPage++
 
-    if(currentPage > totalPages) {
-        currentPage = totalPages
-    }
-    if(currentPage === totalPages) {
-        btnNext.classList.add('btn-disabled')
-    }
+//     if(currentPage > totalPages) {
+//         currentPage = totalPages
+//     }
+//     if(currentPage === totalPages) {
+//         btnNext.classList.add('btn-disabled')
+//     }
 
-    btnPrev.classList.remove('btn-disabled')
-    numberPage.querySelectorAll('li').forEach(li => {
-        li.classList.remove('pagination-active')
-    })
-    $(`.pagination-number li:eq(${currentPage-1})`).addClass('pagination-active')
+//     btnPrev.classList.remove('btn-disabled')
+//     numberPage.querySelectorAll('li').forEach(li => {
+//         li.classList.remove('pagination-active')
+//     })
+//     $(`.pagination-number li:eq(${currentPage-1})`).addClass('pagination-active')
     
-    for(let i = 0; i < currentPage; i++) {
-        let pagination_indicator = numberPage.querySelector('.pagination-indicator')
-        pagination_indicator.style.left = `calc(${(i * 70)}px)`
-    }
+//     for(let i = 0; i < currentPage; i++) {
+//         let pagination_indicator = numberPage.querySelector('.pagination-indicator')
+//         pagination_indicator.style.left = `calc(${(i * 70)}px)`
+//     }
 
-    getCurrentPage(currentPage)
-    renderProducts()
-})
+//     getCurrentPage(currentPage)
+//     renderProducts()
+// })
 
-btnPrev.addEventListener('click', () => {
-    currentPage--
+// btnPrev.addEventListener('click', () => {
+//     currentPage--
 
-    if(currentPage <= 1) {
-        currentPage = 1;
-    }
-    if(currentPage === 1) {
-      btnPrev.classList.add('btn-disabled')
-    }
+//     if(currentPage <= 1) {
+//         currentPage = 1;
+//     }
+//     if(currentPage === 1) {
+//       btnPrev.classList.add('btn-disabled')
+//     }
     
-    btnNext.classList.remove('btn-disabled')
-    numberPage.querySelectorAll('li').forEach(li => {
-        li.classList.remove('pagination-active')
-    })
-    $(`.pagination-number li:eq(${currentPage-1})`).addClass('pagination-active')
+//     btnNext.classList.remove('btn-disabled')
+//     numberPage.querySelectorAll('li').forEach(li => {
+//         li.classList.remove('pagination-active')
+//     })
+//     $(`.pagination-number li:eq(${currentPage-1})`).addClass('pagination-active')
     
-    for(let i = 0; i < currentPage; i++) {
-        let pagination_indicator = numberPage.querySelector('.pagination-indicator')
-        pagination_indicator.style.left = `calc(${(i * 70)}px)`
-    }
+//     for(let i = 0; i < currentPage; i++) {
+//         let pagination_indicator = numberPage.querySelector('.pagination-indicator')
+//         pagination_indicator.style.left = `calc(${(i * 70)}px)`
+//     }
     
-    getCurrentPage(currentPage)
-    renderProducts()
-})
+//     getCurrentPage(currentPage)
+//     renderProducts()
+// })
 
 // ============================== END PRODUCT JSON ==================================
 
