@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
     .sidebar{
-        margin-top: 10rem;
+        margin-top: 8.5rem;
         width: 0;
     }
 
@@ -45,8 +45,8 @@
 
     .avatar {
         margin-left: 0.5rem;
-        width: 8rem;
-        height: 8rem;
+        width: 6.5rem;
+        height: 6.5rem;
     }
 
     .about__intro {
@@ -58,11 +58,12 @@
     }
 
     .header__specialize {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .btn {
         padding: 1rem;
+        font-size: 1.3rem;
     }
 
     .contact-method-item {
@@ -80,17 +81,9 @@
         font-size: 1.6rem;
     }
 
-    .header__specialize {
-        font-size: 1.1rem;
-    }
-
     .about__content {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
-
-    .pagination {
-        width: 95%;
     }
 
     .contact-method-item address {
