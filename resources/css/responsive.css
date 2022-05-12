@@ -30,7 +30,7 @@
 
 @media (max-width: 768px) {
     .sidebar{
-        margin-top: 8.5rem;
+        margin-top: 7rem;
         width: 0;
     }
 
@@ -45,20 +45,16 @@
 
     .avatar {
         margin-left: 0.5rem;
-        width: 6.5rem;
-        height: 6.5rem;
-    }
-
-    .about__intro {
-        font-size: 1.8rem;
+        width: 5rem;
+        height: 5rem;
     }
 
     .header__name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .header__specialize {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .btn {
@@ -86,8 +82,38 @@
         padding-right: 2rem;
     }
 
-    .contact-method-item address {
+    .timeline-item:before {
+        left: 1.9rem;
+    }
+
+    .timeline-icon {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.6rem;
+        line-height: 2.6;
+    }
+
+    .timeline-title span,
+    .portfolio-name {
+        font-size: 2rem;
+    }
+
+    .timeline-desc,
+    .portfolio__choose-link,
+    .portfolio-desc,
+    .portfolio-live-view {
+        font-size: 1.4rem;
+    }
+
+    .flag-wrapper {
         font-size: 1.6rem;
     }
 
+    .flag-wrapper .flag:before {
+        left: -4.9rem;
+    }
+
+    .contact-method-item address {
+        font-size: 1.6rem;
+    }
 }

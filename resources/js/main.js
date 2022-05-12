@@ -69,11 +69,11 @@ const products = [
     },
     {
       id: 3,
-      link: 'https://tranngocphuongnhi.github.io/portfolio-v1/',
-      image: './resources/img/portfolio-v1.png',
-      name: 'Portfolio version 1',
-      description: 'First portfolio is designed by Adobe XD.',
-      tag: ['HTML', 'CSS', 'JavaScript', 'Adobe XD'],
+      link: 'https://tranngocphuongnhi.github.io/portfolio/',
+      image: './resources/img/portfolio.png',
+      name: 'Portfolio',
+      description: 'Show my information, products and contact information.',
+      tag: ['HTMl', 'CSS', 'JavaScript', 'jQuery', 'Adobe XD'],
       filter: 'web',
     },
     {
@@ -103,15 +103,6 @@ const products = [
         tag: ['Figma'],
         filter: 'ui-ux',
     },
-    {
-      id: 7,
-      link: 'https://tranngocphuongnhi.github.io/portfolio/',
-      image: './resources/img/portfolio-v2.png',
-      name: 'Portfolio version 2',
-      description: 'First portfolio is designed by Adobe XD.',
-      tag: ['HTMl', 'CSS', 'JavaScript', 'jQuery'],
-      filter: 'web',
-    },
 
 ]
 
@@ -121,7 +112,7 @@ function renderProducts() {
             html += `
                 <li class="portfolio-item ${item.filter}" data-item="${item.filter}">
                     <div class="portfolio-content">
-                        <img class="portfolio-img" src="${item.image}" alt="background">
+                        <img class="portfolio-img" src="${item.image}" alt="image">
                         <div class="portfolio-info">
                             <h3 class="portfolio-name">${item.name}</h3>
                             <ul class="portfolio-list-skill">
