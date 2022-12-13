@@ -363,8 +363,13 @@ ul {
     line-height: 1.5;
 }
 
-.name {
+.title {
     font-weight: 700;
+}
+
+.name {
+    color: var(--tertiary-color);
+    font-style: italic;
 }
 
 /* =============================================== Portfolio =============================== */

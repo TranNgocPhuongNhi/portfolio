@@ -103,6 +103,15 @@ const products = [
         tag: ['Figma'],
         filter: 'ui-ux',
     },
+        {
+        id: 7,
+        link: '',
+        image: './resources/img/bai-khoi-vuong-mhee.png',
+        name: 'Cube material',
+        description: 'Cube material of Mhee exercise',
+        tag: ['Photoshop'],
+        filter: 'digital-paiting',
+    },
 
 ]
 
