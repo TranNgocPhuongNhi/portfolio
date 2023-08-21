@@ -3,10 +3,11 @@
 :root {
     --primary-color: #FFE3E3;
     --secondary-color: #FFF1F1;
-    --tertiary-color: #FF96AD;
+    --tertiary-color: #FF5C7F;
     --white-color: #fff;
     --main-text-color: #000;
     --sub-text-color: #7C8594;
+
 
     /* Light theme */
     /* --light-bg-color: #fff;
@@ -94,7 +95,7 @@ ul {
     top: 0;
 	right: 0;
 	left: 0;
-    padding: 1rem 3rem;
+    padding: 1.6rem 3.2rem;
     background: var(--secondary-color);
     z-index: 101;
     box-shadow: 0px 4px 10px rgba(255, 150, 173, 0.3);
@@ -112,8 +113,8 @@ ul {
 }
 
 .avatar {
-    width: 13rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
     margin: 0 auto;
 }
 
@@ -133,27 +134,31 @@ ul {
 }
 
 .header__name {
-    font-size: 3.5rem;
+    font-size: 3.6rem;
+    font-weight: bold;
 }
 
 .header__specialize {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 500;
 }
 
-.btn {
+.button {
     font-size: 1.6rem;
+    font-weight: 600;
     text-align: center;
+    border-radius: 1.6rem;
+    padding: 1.2rem 2.4rem;
+}
+
+.button__secondary {
     color: var(--tertiary-color);
     border: 2px solid var(--tertiary-color);
-    border-radius: 1.5rem;
-    padding: 1rem 4rem;
     transition: all 0.5s ease-in-out;
 }
 
-.btn:hover {
-    box-shadow: 0 0 0 10px rgba(255, 150, 173, 0.3);
-}
+.button__secondary:hover {
+    box-shadow: 0px 0px 0px 10px rgba(255, 92, 127, 0.2);}
 
 /* ============================ SIDEBAR ============================ */
 .sidebar {
@@ -182,7 +187,7 @@ ul {
     width: 5rem;
     height: 5rem;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 3.2rem;
 }
 
 .logo img {
@@ -200,7 +205,7 @@ ul {
 }
 
 .navbar-link i {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-right: 3rem;
 }
 
@@ -211,7 +216,7 @@ ul {
 }
 
 .nav-active {
-    border-left: 5px solid var(--tertiary-color);
+    border-left: 4px solid var(--tertiary-color);
 }
 
 .nav-active .navbar-link{
@@ -234,8 +239,8 @@ ul {
 /* ============================ WRAPPER ============================ */
 
 .wrapper {
-    padding-top: 15rem;
-    margin-left: 6.5rem;
+    padding-top: 16rem;
+    margin-left: 7.2rem;
     transition: margin-left .5s;
 }
 
@@ -260,13 +265,7 @@ ul {
     border-radius: 2rem;
     max-width: 100%;
     margin: 2rem;
-    padding: 3rem 5rem;
-}
-
-.about__intro {
-    font-size: 2rem;
-    line-height: 1.6;
-    margin-bottom: 5rem;
+    padding: 4.8rem 5rem;
 }
 
 .timeline {
@@ -275,19 +274,20 @@ ul {
 }
 
 .timeline-item {
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     position: relative;
 }
 
 .timeline-item:before {
     position: absolute;
-    left: 2.3rem;
+    left: 2.2rem;
     top: 6rem;
     content: '';
     display: block;
-    width: 3px;
+    width: 3.2px;
     height: 100%;
     background: var(--primary-color);
+    border-radius: 2rem;
 }
 
 .timeline-title {
@@ -296,8 +296,8 @@ ul {
 }
 
 .timeline-icon {
-    width: 5rem;
-    height: 5rem;
+    width: 4.8rem;
+    height: 4.8rem;
     border-radius: 50%;
     font-size: 1.8rem;
     text-align: center;
@@ -309,18 +309,19 @@ ul {
 
 .timeline-title span {
     color: var(--tertiary-color);
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 0.2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.048rem;
     margin-left: 2rem;
 }
 
 .flag-wrapper {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
     color: var(--main-text-color);
     margin-left: 7rem;
-    margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 3.2rem;
     position: relative;
 }
 
@@ -360,16 +361,29 @@ ul {
 .timeline-desc {
     font-size: 1.6rem;
     margin-left: 7rem;
-    line-height: 1.5;
 }
 
-.title {
+.timeline-desc .title {
     font-weight: 700;
 }
 
-.name {
+.timeline-desc .name {
     color: var(--tertiary-color);
     font-style: italic;
+    margin-bottom: 1.2rem;
+}
+
+.timeline-desc .desc {
+    margin-bottom: 1.2rem;
+}
+
+.timeline-desc span {
+    font-style: italic;
+}
+
+.timeline-desc li ul {
+    list-style-type: disc;
+    padding-left: 2.4rem;
 }
 
 /* =============================================== Portfolio =============================== */
@@ -412,7 +426,7 @@ ul {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 3rem auto;
+    margin: 2.4rem auto;
 }
 
 .portfolio-item {

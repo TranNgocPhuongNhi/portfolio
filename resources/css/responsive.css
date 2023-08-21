@@ -57,9 +57,10 @@
         font-size: 1rem;
     }
 
-    .btn {
-        padding: 1rem;
-        font-size: 1.3rem;
+    .button {
+        padding: 0.8rem 1.6rem;
+        font-size: 1.2rem;
+        border-radius: 1.2rem;
     }
 
     .contact-method-item {
