@@ -96,7 +96,7 @@ const products = [
     },
     {
         id: 6,
-        link: '',
+        link: 'https://www.behance.net/gallery/163168915/Cat-flowers',
         image: './resources/img/final-course.png',
         name: 'Digital painting basic',
         description: 'This is the first time I learned digital painting. The avatar is my final exercise.',
